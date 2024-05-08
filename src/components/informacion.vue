@@ -13,9 +13,7 @@ defineProps({
                 alt="Image">
             <h1 class="font-weight-bold">{{ nombre }}</h1>
             <p class="mb-4">
-                Justo stet no accusam stet invidunt sanctus magna clita vero eirmod, sit sit labore dolores lorem.
-                Lorem
-                at sit dolor dolores sed diam justo
+                Bienvenido a mi blog personal, espero que te guste y encuentres informacion util para tus proyectos.
             </p>
             <div class="d-flex justify-content-center mb-5">
                 <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -23,7 +21,7 @@ defineProps({
                 <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <a href="#" class="btn btn-lg btn-block btn-primary mt-auto">Hire Me</a>
+            <RouterLink to="/contacto" class="btn btn-lg btn-block btn-primary mt-auto">Contactame</RouterLink>
         </div>
         <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
             <i class="fas fa-2x fa-angle-double-right text-primary"></i>

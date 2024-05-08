@@ -4,6 +4,8 @@ import VerMasView from '../views/VerMasView.vue'
 import CategoriasView from '../views/CategoriasView.vue'
 import BlogView from '../views/BlogView.vue'
 import AuthView from '../views/AuthView.vue'
+import SobreMiView from '../views/SobreMiView.vue'
+import ContactoView from '../views/ContactoView.vue'
 
 
 const router = createRouter({
@@ -13,6 +15,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: inicioView
+    },
+    {
+      path: '/contacto',
+      name: 'contacto',
+      component: ContactoView
     },
     {
       path: '/auth',
@@ -33,6 +40,11 @@ const router = createRouter({
       path: '/vermas/:id',
       name: 'vermas',
       component: VerMasView
+    },
+    {
+      path: '/sobremi',
+      name: 'sobremi',
+      component: SobreMiView
     },
     {
       path: '/about',

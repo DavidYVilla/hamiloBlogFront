@@ -80,7 +80,7 @@
 
             </div>
             <div v-else class="col">
-                <p>Registrate o inicia Session</p>
+                <p>Registrate o inicia Session: </p>
                 <Router-link to="/auth" class="btn btn-primary">Ingresa</Router-link>
             </div>
         </div>
@@ -151,6 +151,7 @@ export default {
                 alert('escriba un comentario');
                 return;
             }
+            //console.log(token);
             try {
                 const { data } = await axios.post(baseUrl + '/comentarios', {
                     post_id: idPost,
@@ -159,9 +160,10 @@ export default {
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json',
-                        'Authorization': 'Bearrer' + token
+                        'Authorization': 'Bearer ' + token
                     }
                 });
+                // console.log(data);
                 enviado.value = true;
                 comentario.value = '';
                 setTimeout(() => {
